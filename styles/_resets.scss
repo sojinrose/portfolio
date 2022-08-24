@@ -1,0 +1,27 @@
+* {
+  font-family: "Roboto";
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: $mainTextColor;
+}
+
+body {
+  background-color: $mainBgColor;
+}
+
+p,
+span,
+li {
+  color: $secondaryTextColor;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: $mainLinkColor;
+  font-weight: 500;
+}
+
+li {
+  line-height: 1.9em;
+}
