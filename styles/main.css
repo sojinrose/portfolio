@@ -1,46 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-:root {
-  --mainTextColor-light: #000;
-  --secondaryTextColor-light: rgb(51 51 51);
-  --mainLinkColor-light: #0da2b8;
-  --mainBorderColor-light: rgb(218, 218, 218);
-  --mainBgColor-light: rgb(249, 250, 251);
-
-  --mainTextColor-dark: #fff;
-  --secondaryTextColor-dark: #adb0b1;
-  --mainLinkColor-dark: rgb(30, 190, 214);
-  --mainBorderColor-dark: #2b3031;
-  --mainBgColor-dark: #131415;
-
-  --mainTextColor: var(--mainTextColor-light);
-  --secondaryTextColor: (--secondaryTextColor-light);
-  --mainLinkColor: var(--mainLinkColor-light);
-  --mainBorderColor: var(--mainBorderColor-light);
-  --mainBgColor: var(--mainBgColor-light);
-}
-
 * {
   font-family: "Roboto";
   line-height: 1.5em;
   box-sizing: border-box;
-  color: var(--mainTextColor);
+  color: #000;
 }
 
 body {
-  background-color: var(--mainBgColor);
+  background-color: rgb(249, 250, 251);
 }
 
 p,
 span,
 li {
-  color: var(--secondaryTextColor);
+  color: rgb(51, 51, 51);
   font-size: 1em;
 }
 
 a {
   text-decoration: none;
-  color: var(--mainLinkColor);
+  color: #0da2b8;
   font-weight: 500;
 }
 
@@ -48,133 +27,117 @@ li {
   line-height: 1.9em;
 }
 
-#container--main {
+.container {
   max-width: 700px;
   margin: 0 auto;
   padding: 1em;
 }
 
-.section--page {
+.section-page {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-#wrapper--hero {
+.wrapper-hero {
   display: flex;
   align-items: center;
   gap: 4em;
 }
-
-#bio,
-a {
-  font-weight: 300;
+.wrapper-hero__pic {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
-
-#user-name {
+.wrapper-hero__username {
   font-size: 48px;
   line-height: 1em;
 }
-
-#profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
+.wrapper-hero__email {
+  color: #000;
 }
 
-#email {
-  color: var(--mainTextColor);
-}
-
-#socials--list {
+.socials-list {
   display: flex;
   justify-content: space-between;
-  column-gap: 1em;
+  -moz-column-gap: 1em;
+       column-gap: 1em;
   flex-wrap: wrap;
 }
-
-#socials--list a {
+.socials-list__item {
   font-weight: 300;
-  color: var(--secondaryTextColor);
+  color: rgb(51, 51, 51);
   font-size: 0.9em;
   transition: 0.3s;
 }
-
-#socials--list a:hover {
+.socials-list__item:hover {
   font-weight: 100;
-  color: var(--mainLinkColor);
+  color: #0da2b8;
   font-size: 0.9em;
 }
 
-#qualifications--list {
+.qualifications-list {
   list-style: none;
 }
 
-#wrapper--techstack__items {
+.wrapper-techstack {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   font-size: 0.9em;
 }
-
-.card--techstack {
-  border: 1px solid var(--mainBorderColor);
+.wrapper-techstack__item {
+  border: 1px solid rgb(218, 218, 218);
   border-radius: 5px;
   padding: 0.5em 1em;
   align-items: center;
 }
 
-.card--project {
+.card-project {
   padding-top: 1em;
   padding-bottom: 1em;
-  border-top: 1px solid var(--mainBorderColor);
+  border-top: 1px solid rgb(218, 218, 218);
 }
-
-.card--project a {
-  color: var(--mainTextColor);
-
+.card-project__item {
+  color: #000;
   transition: 0.3s;
 }
-
-.card--project a:hover {
+.card-project__item:hover {
   color: rgb(30, 190, 214);
 }
 
-.card--work-history {
-  border-left: 1px solid var(--mainBorderColor);
+.card-work-history {
+  border-left: 1px solid rgb(218, 218, 218);
   margin-top: 3em;
   margin-bottom: 3em;
   padding-left: 2em;
 }
 
 .line-break {
-  background-color: var(--mainBorderColor);
+  background-color: rgb(218, 218, 218);
   height: 1px;
 }
 
 @media (max-width: 600px) {
-  .section--page {
+  .section-page {
     padding-top: 1em;
     padding-bottom: 1em;
   }
-
-  #wrapper--hero {
+  .wrapper-hero {
     display: flex;
     align-items: center;
     gap: 1em;
   }
-
-  #profile-pic {
+  .wrapper-hero__pic {
     width: 200px;
     height: 200px;
   }
-
-  #wrapper--hero {
+  .wrapper-hero {
     flex-direction: column;
   }
-
-  .card--work-history {
+  .card-work-history {
     border-left: none;
     padding-left: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */
