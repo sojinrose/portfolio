@@ -38,6 +38,19 @@ li {
   padding-bottom: 1em;
 }
 
+.lang {
+  display: flex;
+  justify-content: end;
+}
+.lang__item {
+  padding: 0.5em;
+}
+.lang__item--active {
+  background: #0da2b8;
+  border-radius: 5px;
+  color: rgb(249, 250, 251);
+}
+
 .wrapper-hero {
   display: flex;
   align-items: center;

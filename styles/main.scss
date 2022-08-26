@@ -20,6 +20,21 @@
   padding-bottom: 1em;
 }
 
+.lang {
+  display: flex;
+  justify-content: end;
+
+  &__item {
+    padding: 0.5em;
+
+    &--active {
+      background: $mainLinkColor;
+      border-radius: 5px;
+      color: $mainBgColor-light;
+    }
+  }
+}
+
 .wrapper-hero {
   display: flex;
   align-items: center;
